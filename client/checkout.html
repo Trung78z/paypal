@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PayPal JS SDK Standard Integration</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body>
+    <div class="flex items-center justify-center min-h-screen">
+      <div id="paypal-button-container" class="min-w-80"></div>
+      <p id="result-message"></p>
+    </div>
+    <!-- Replace the "test" client-id value with your client-id -->
+    <script
+      src="https://www.paypal.com/sdk/js?client-id=AVjQrOphXBJ5a7lhrwyX9fWe6NIldATVs8ejfVlZ0ibXgEozilw_jk_PuieFvY9sAe1RY1-yGwgkf20X&components=buttons&enable-funding=venmo,paylater"
+      data-sdk-integration-source="integrationbuilder_sc"
+    ></script>
+    <script src="app.js"></script>
+  </body>
+</html>
